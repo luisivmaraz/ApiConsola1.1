@@ -6,13 +6,12 @@ const productSchema = new Schema({
         unique:true,
         required:true
     },
-    description:String,
-    brand:String,
+    origen:String,
+    destino:String,
     price:Number,
-    cost:Number,
-    stock:Number,
-    expiredDate:String,
-    status:Number
+    exit:String,
+    line:String,
+    seat:Number
 },{
     timestamps:true,
     versionKey:false
@@ -20,4 +19,4 @@ const productSchema = new Schema({
 
 )
 
-export default model('products', productSchema);
+export default model('tickets', productSchema);
